@@ -23,3 +23,7 @@ conversion.
 Pulled and checked on Talapas, 2026-09-13: git 2.55.0, `libglpk.so.40`
 present, renv loads, and igraph installs and loads without the missing-GLPK
 failure seen on the unmodified base image.
+
+Also launched through a den workspace on the same digest: `system("git
+--version")` from inside the RStudio session (the rsession's own PATH, not a
+container `exec`) reports git 2.55.0.
